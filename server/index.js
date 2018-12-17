@@ -1,9 +1,9 @@
 const express    = require('express');
+const cluster    = require('cluster');
+const path       = require('path');
+const apis       = require('./apis');
 const config     = require('./config');
 const middleware = require('./middleware');
-const apis       = require('./apis');
-const path       = require('path');
-const cluster    = require('cluster');
 
 const PORT = process.env.PORT || config.CONSTANTS.PORT;
 
@@ -34,11 +34,11 @@ if (!isDev && cluster.isMaster) {
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../ui/build')));
 
-  // Answer API requests.
-  app.get('/api', function (req, res) {
-    res.set('Content-Type', 'application/json');
-    res.send('{"message":"Hello from the custom server!"}');
-  });
+  // // Answer API requests.
+  // app.get('/api', function (req, res) {
+  //   res.set('Content-Type', 'application/json');
+  //   res.send('{"message":"Hello from the custom server!"}');
+  // });
 
   // All remaining requests return the React app, so it can handle routing.
   app.get('*', function(request, response) {
