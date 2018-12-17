@@ -1,5 +1,4 @@
 const express = require('express');
-// const favicon = require('express-favicon');
 const path    = require('path');
 const cluster = require('cluster');
 
@@ -24,8 +23,6 @@ if (!isDev && cluster.isMaster) {
 
 } else {
   const app = express();
-
-  // app.use(favicon(__dirname + '../ui/build/favicon.ico'));
 
   app.get('/testing', (req, res) => {
     res.json({ testing: 'success' });
