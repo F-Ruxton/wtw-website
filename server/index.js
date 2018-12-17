@@ -28,6 +28,9 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
 
+  middleware.install(app);
+  apis.register(app);
+
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../ui/build')));
 
@@ -47,18 +50,3 @@ if (!isDev && cluster.isMaster) {
     console.error(`Node ${processMsg}: listening on port ${PORT}`);
   });
 }
-
-
-
-
-middleware.install(app);
-apis.register(app);
-
-app.use(express.static(__dirname));
-app.use(express.static(path.join(__dirname, 'build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + 'build/index.html'));
-});
-
-app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
