@@ -1,7 +1,6 @@
 {
   "name": "wtw-website",
   "version": "1.0.0",
-  "main": "server",
   "author": "Freddie Ruxton <ruxton.f@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -15,7 +14,7 @@
   },
   "scripts": {
     "start": "node server",
-    "heroku-postbuild": "cd ui/ && yarn && yarn build"
+    "heroku-postbuild": "cd ui/ && yarn && yarn build && ls build"
   },
   "cacheDirectories": [
     "node_modules",
