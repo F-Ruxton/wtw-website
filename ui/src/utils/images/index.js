@@ -11,8 +11,17 @@ export const url = (publicId, options) => {
 };
 
 export const resources = async ({ method = apiConstants.get, options = {} } = {}) => {
-  const resources = await axios.post('/resources', { method, options });
-  return resources;
+  try {
+    const resources = await axios.post(
+      'api/resources',
+      { method, options },
+      { 'Content-Type': 'application/json' },
+    );
+    return resources;
+  } catch (error) {
+    console.log('Error: ' + error);
+    return {};
+  }
 }
 
 export const fetchImageByTag = async ({ tag, multiple = false, options = {} }) => {

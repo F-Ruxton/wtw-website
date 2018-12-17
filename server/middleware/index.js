@@ -8,16 +8,12 @@ const corsConfig = {
   allowedHeaders: ["Content-Type"],
 };
 
-module.exports = middleware = [
+const middleware = [
   bodyParser.urlencoded({ extended: false }),
   bodyParser.json(),
   cors(corsConfig),
 ];
 
-function install(app) {
-  middleware.forEach(ware => app.use(ware));
+module.exports = function(app) {
+  middleware.forEach(w => app.use(w));
 }
-
-module.exports = {
-  install: install,
-};

@@ -6,10 +6,12 @@ const apis = [
   cloudinaryApi,
 ];
 
+// module.exports = apis
+
 function installAction(app, actionObj) {
-  const name   = _.get('name', actionObj);
+  const name   = _.get('name',   actionObj);
   const method = _.get('method', actionObj);
-  const route  = _.get('route', actionObj);
+  const route  = _.get('route',  actionObj);
   const action = _.get('action', actionObj);
 
   if (_.isUndefined(method)) {
@@ -22,16 +24,30 @@ function installAction(app, actionObj) {
     throw new Error(name + ": action is undefined");
   }
 
-  app[method](route, action);
+  console.log('install action: ');
+  console.log(JSON.stringify(actionObj, null, 4));
+  console.log(_.join('/', ['api', route]));
+
+  app[method](_.join('/', ['api', route]), action);
 }
 
-function register(app) {
-  _.map(
-    api => _.map(action => installAction(app, action), api),
-    apis,
-  );
+module.exports = function(app) {
+  apis.forEach(api => api.forEach(a => {
+    const method = a.method;
+    const route  = '/api/' + a.route;
+    const action = a.action;
+
+    app[method](route, action);
+  }));
 }
 
-module.exports = {
-  register: register,
-};
+// function register(app) {
+//   _.map(
+//     api => _.map(action => installAction(app, action), api),
+//     apis,
+//   );
+// }
+
+// module.exports = {
+//   register: register,
+// };

@@ -3,12 +3,12 @@ const actions = require('./actions');
 module.exports = [
   {
     method: 'post',
-    route: 'api/resources',
+    route: 'resources',
     action: actions.resources,
   },
   {
     method: 'post',
-    route: 'api/resources/tags',
+    route: 'resources/tags',
     action: actions.listTags,
   }
 ];

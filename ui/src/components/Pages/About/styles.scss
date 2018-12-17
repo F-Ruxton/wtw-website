@@ -25,7 +25,7 @@
   }
 
   &__row-1 {
-    @include section-fill-page(calc(140px + $header-height));
+    @include section-fill-page(calc(140px + #{$header-height}));
   }
 
   &__text {
@@ -78,7 +78,7 @@
   }
 
   &__team {
-    @include section-fill-page(calc(140px + $header-height));
+    @include section-fill-page(calc(140px + #{$header-height}));
     max-width: 1200px;
     padding: 0;
 

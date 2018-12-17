@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import _ from 'lodash/fp';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-// import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { CloudinaryContext } from 'cloudinary-react';
-// import { photosFetched } from '../../actions';
 import Nav from '../Nav';
 import Footer from '../Footer';
 import SwitchRouter from '../Pages/routing/SwitchRouter';
@@ -52,10 +49,5 @@ App.contextTypes = {
   cloudName: PropTypes.string,
   uploadPreset: PropTypes.string,
 };
-// photosFetched
-// const AppContainer = connect(null, { onPhotosFetched: _.noop })(App);
-
-// Object.assign(AppContainer.contextTypes, App.contextTypes);
-// Object.assign(App.contextTypes, App.contextTypes);
 
 export default App;

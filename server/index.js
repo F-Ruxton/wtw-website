@@ -1,9 +1,8 @@
+const _ = require('lodash/fp');
 const express    = require('express');
 const cluster    = require('cluster');
 const path       = require('path');
-const apis       = require('./apis');
 const config     = require('./config');
-const middleware = require('./middleware');
 
 const PORT = process.env.PORT || config.CONSTANTS.PORT;
 
@@ -28,14 +27,14 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
 
-  middleware.install(app);
-  apis.register(app);
-
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../ui/build')));
 
+  require('./middleware')(app);
+  require('./apis')(app);
+
   // All remaining requests return the React app, so it can handle routing.
-  app.get('*', function(request, response) {
+  app.get('/*', function(request, response) {
     response.sendFile(path.resolve(__dirname, '../ui/build', 'index.html'));
   });
 
