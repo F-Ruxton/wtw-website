@@ -1,0 +1,7 @@
+{
+  "name": "wtw-website",
+  "version": "1.0.0",
+  "main": "server",
+  "author": "Freddie Ruxton <ruxton.f@gmail.com>",
+  "license": "MIT"
+}
