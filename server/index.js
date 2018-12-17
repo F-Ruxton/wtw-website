@@ -1,11 +1,15 @@
-const express = require('express');
-const path    = require('path');
-const cluster = require('cluster');
+const express    = require('express');
+const config     = require('./config');
+const middleware = require('./middleware');
+const apis       = require('./apis');
+const path       = require('path');
+const cluster    = require('cluster');
+
+const PORT = process.env.PORT || config.CONSTANTS.PORT;
 
 const numCPUs = require('os').cpus().length;
 
 const isDev = process.env.NODE_ENV !== 'production';
-const PORT  = process.env.PORT || 5000;
 
 // Multi-process to utilize all CPU cores.
 if (!isDev && cluster.isMaster) {
@@ -23,10 +27,6 @@ if (!isDev && cluster.isMaster) {
 
 } else {
   const app = express();
-
-  app.get('/testing', (req, res) => {
-    res.json({ testing: 'success' });
-  });
 
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../ui/build')));
@@ -47,3 +47,18 @@ if (!isDev && cluster.isMaster) {
     console.error(`Node ${processMsg}: listening on port ${PORT}`);
   });
 }
+
+
+
+
+middleware.install(app);
+apis.register(app);
+
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + 'build/index.html'));
+});
+
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
