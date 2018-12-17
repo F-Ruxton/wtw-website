@@ -1,0 +1,14 @@
+.Anchor__link {
+  text-decoration: none;
+  color: white; }
+  .Anchor__link:hover {
+    text-decoration: underline; }
+
+.Anchor__button {
+  background: none;
+  border: none;
+  color: white; }
+  .Anchor__button:hover {
+    text-decoration: underline; }
+  .Anchor__button:focus {
+    outline: none; }

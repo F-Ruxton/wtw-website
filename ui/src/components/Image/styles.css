@@ -1,0 +1,6 @@
+.Image {
+  display: block;
+  height: 100px;
+  width: auto; }
+  .Image__bordered {
+    border: 1px solid white; }

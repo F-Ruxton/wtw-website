@@ -1,0 +1,8 @@
+.Gallery {
+  width: 100%; }
+  .Gallery__buffer {
+    clear: both; }
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px; }

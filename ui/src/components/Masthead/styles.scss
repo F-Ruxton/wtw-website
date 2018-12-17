@@ -1,0 +1,30 @@
+.Masthead {
+  display: flex;
+  font-size: 30px;
+  padding-left: 10px;
+
+  @media screen and (min-width: 500px) {
+    width: 300px;
+  }
+
+  &__text {
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--small {
+      @media screen and (min-width: 500px) {
+        display: none;
+      }
+    }
+
+    &--large {
+      display: none;
+
+      @media screen and (min-width: 500px) {
+        display: initial;
+      }
+    }
+  }
+}

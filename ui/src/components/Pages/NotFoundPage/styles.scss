@@ -1,0 +1,39 @@
+@import 'styles/variables.scss';
+@import 'styles/button.scss';
+@import 'styles/section.scss';
+
+.NotFoundPage {
+  @include section-fill-page(292px);
+  // height: calc(100vh - #{$nav-height} - #{$footer-height});
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+  }
+
+  &__header {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    white-space: initial;
+    @media screen and (min-width: 600px) {
+      white-space: nowrap;
+    }
+  }
+
+  &__home-link {
+    @extend %button;
+    font-size: 40px;
+    margin-left: 20px;
+  }
+}

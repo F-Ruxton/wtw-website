@@ -1,0 +1,6 @@
+.FillPageBox {
+  display: grid;
+  height: calc(100vh - 100px);
+  max-width: 100%;
+  max-height: calc(100vh - 100px);
+  margin: auto; }

@@ -1,0 +1,9 @@
+.Landing {
+  padding: 0;
+  height: calc(70vh);
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 700px) {
+    .Landing {
+      margin: 30px 0;
+      height: calc(100vh - 170px); } }

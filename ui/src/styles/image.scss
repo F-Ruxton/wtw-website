@@ -1,0 +1,7 @@
+@import 'styles/variables.scss';
+
+%full-height-image {
+  height: calc(100vh - #{$nav-height} - 30px);
+  width: auto;
+  margin: auto;
+}

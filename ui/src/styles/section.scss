@@ -1,0 +1,12 @@
+@import 'styles/variables.scss';
+
+%section {
+  margin: $section-padding auto;
+}
+
+@mixin section-fill-page($height: 0px) {
+  height: calc(100vh - 100px - #{$height});
+  margin: auto;
+  padding: 50px;
+  max-width: 1200px;
+}

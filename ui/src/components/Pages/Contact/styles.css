@@ -1,0 +1,21 @@
+.Contact {
+  height: calc(100vh - 100px - 290px);
+  margin: auto;
+  padding: 50px;
+  max-width: 1200px;
+  height: initial;
+  padding: initial;
+  max-width: 1600px;
+  font-size: 30px; }
+  @media screen and (min-width: 780px) {
+    .Contact__header {
+      display: none; } }
+  .Contact__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    @media screen and (min-width: 960px) {
+      .Contact__row {
+        flex-direction: row; } }
+  .Contact__box {
+    margin: 20px; }

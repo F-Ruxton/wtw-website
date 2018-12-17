@@ -1,0 +1,31 @@
+@import 'styles/variables.scss';
+@import 'styles/section.scss';
+
+.Contact {
+  @include section-fill-page(290px);
+  height: initial;
+  padding: initial;
+  max-width: 1600px;
+  font-size: 30px;
+
+  &__header {
+    @media screen and (min-width: 780px) {
+      display: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+    }
+  }
+
+
+  &__box {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,142 @@
+.About {
+  max-width: 1600px;
+  margin: auto;
+  font-size: 30px; }
+  .About__main-img {
+    margin: 30px auto;
+    padding: 0;
+    width: auto;
+    max-width: 1200px;
+    height: 30vh; }
+    @media screen and (min-width: 500px) {
+      .About__main-img {
+        height: 50vh; } }
+    @media screen and (min-width: 700px) {
+      .About__main-img {
+        height: 60vh; } }
+    @media screen and (min-width: 960px) {
+      .About__main-img {
+        height: 65vh; } }
+  .About__row-1 {
+    height: calc(100vh - 100px - calc(140px + $header-height));
+    margin: auto;
+    padding: 50px;
+    max-width: 1200px; }
+  .About__text {
+    font-size: calc(24px - 10px);
+    padding-top: 20px; }
+    @media screen and (min-width: 400px) {
+      .About__text {
+        font-size: calc(calc(24px - 10px) + 4px); } }
+    @media screen and (min-width: 500px) {
+      .About__text {
+        font-size: calc(calc(24px - 10px) + 8px); } }
+    @media screen and (min-width: 600px) {
+      .About__text {
+        font-size: calc(calc(24px - 10px) + 12px); } }
+    @media screen and (min-width: 700px) {
+      .About__text {
+        padding: 20px; } }
+  .About__heading {
+    font-size: 36px; }
+  .About__process--list {
+    list-style: circle;
+    margin-bottom: -10px; }
+  .About__process--items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    @media screen and (min-width: 900px) {
+      .About__process--items {
+        flex-direction: row; } }
+  .About__process--item {
+    font-size: calc(24px - 10px);
+    margin: 10px; }
+    @media screen and (min-width: 400px) {
+      .About__process--item {
+        font-size: calc(calc(24px - 10px) + 4px); } }
+    @media screen and (min-width: 500px) {
+      .About__process--item {
+        font-size: calc(calc(24px - 10px) + 8px); } }
+    @media screen and (min-width: 600px) {
+      .About__process--item {
+        font-size: calc(calc(24px - 10px) + 12px); } }
+  .About__gallery {
+    margin: 30px auto;
+    max-width: 1200px; }
+  .About__text-sections {
+    max-width: 1200px;
+    margin: auto; }
+    .About__text-sections--section {
+      margin-bottom: 30px; }
+  .About__team {
+    height: calc(100vh - 100px - calc(140px + $header-height));
+    margin: auto;
+    padding: 50px;
+    max-width: 1200px;
+    max-width: 1200px;
+    padding: 0; }
+    .About__team--row {
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 1600px) {
+        .About__team--row {
+          flex-direction: row; } }
+    .About__team-member {
+      flex-grow: 1;
+      width: 90%; }
+      @media screen and (min-width: 1600px) {
+        .About__team-member {
+          width: 50%; } }
+      .About__team-member--content {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        flex-direction: column; }
+        @media screen and (min-width: 900px) {
+          .About__team-member--content {
+            padding: 30px;
+            flex-direction: row; } }
+        @media screen and (min-width: 1600px) {
+          .About__team-member--content {
+            flex-direction: column; } }
+        .About__team-member--content--right {
+          flex-direction: column; }
+          @media screen and (min-width: 900px) {
+            .About__team-member--content--right {
+              flex-direction: row-reverse; } }
+          @media screen and (min-width: 1600px) {
+            .About__team-member--content--right {
+              flex-direction: column; } }
+      .About__team-member--img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid white; }
+        @media screen and (max-width: 600px) {
+          .About__team-member--img {
+            height: 200px;
+            width: 200px; } }
+      .About__team-member--name {
+        font-size: 20px;
+        margin: 10px 0 0;
+        font-weight: bold; }
+        @media screen and (min-width: 900px) {
+          .About__team-member--name {
+            font-size: 24px; } }
+      .About__team-member--text {
+        font-size: calc(24px - 10px);
+        margin: 10px; }
+        @media screen and (min-width: 400px) {
+          .About__team-member--text {
+            font-size: calc(calc(24px - 10px) + 4px); } }
+        @media screen and (min-width: 500px) {
+          .About__team-member--text {
+            font-size: calc(calc(24px - 10px) + 8px); } }
+        @media screen and (min-width: 600px) {
+          .About__team-member--text {
+            font-size: calc(calc(24px - 10px) + 12px); } }
+        @media screen and (min-width: 600px) {
+          .About__team-member--text {
+            margin: 20px; } }

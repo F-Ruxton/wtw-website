@@ -1,0 +1,29 @@
+@import 'styles/mixins.scss';
+
+.ContactDetails {
+  width: fit-content;
+  margin: auto;
+
+  @media screen and (min-width: 780px) {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &__inner {
+    @media screen and (min-width: 780px) {
+      border: 2px solid;
+      padding: 20px;
+    }
+  }
+
+  &__detail {
+    margin-bottom: 30px;
+    @include font-break(16px);
+
+    &--text {
+      margin: 10px 0 0 0;
+      @include font-break(12px);
+    }
+  }
+}

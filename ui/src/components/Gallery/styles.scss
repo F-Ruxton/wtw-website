@@ -1,0 +1,16 @@
+@import 'styles/variables.scss';
+@import 'styles/image.scss';
+@import 'styles/section.scss';
+
+.Gallery {
+  width: 100%;
+
+  &__buffer {
+    clear: both;
+  }
+}
+
+.image-gallery-thumbnail img {
+  width: auto;
+  height: 75px;
+}

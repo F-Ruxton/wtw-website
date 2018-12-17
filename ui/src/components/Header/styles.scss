@@ -1,0 +1,12 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.Header {
+  @include font-break($header-font-size);
+  font-weight: 400;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 600px) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+@import 'styles/mixins.scss';
+
+.LinkImage {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-size:cover;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  margin: 40px;
+  position: relative;
+
+  &__link {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      .LinkImage__text {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__img {
+    opacity: 0.9;
+  }
+
+  &__text {
+    @extend %button;
+    @include font-break(18px);
+    height: 35px;
+    position: absolute;
+    right: 15%;
+    top: 15%;
+  }
+}

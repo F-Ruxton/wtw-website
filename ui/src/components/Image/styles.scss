@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+
+.Image {
+  display: block;
+  height: 100px;
+  width: auto;
+
+  &__bordered {
+    border: 1px solid $line-color;
+  }
+}

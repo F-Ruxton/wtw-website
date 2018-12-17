@@ -1,0 +1,23 @@
+.Rock {
+  display: flex;
+  align-items: baseline; }
+
+.rock-line {
+  fill: white; }
+
+.rock-fill {
+  fill: grey; }
+
+.rock-text {
+  fill: white;
+  font-family: 'CourierNewPSMT';
+  font-size: 180px;
+  pointer-events: none; }
+  .rock-text__portfolio {
+    font-size: 155px; }
+
+#rock-svg:hover {
+  cursor: pointer; }
+
+#rock-svg:hover .rock-fill {
+  fill: #e8b86d; }

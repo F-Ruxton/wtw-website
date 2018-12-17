@@ -1,0 +1,16 @@
+.Header {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 400px) {
+    .Header {
+      font-size: calc(32px + 4px); } }
+  @media screen and (min-width: 500px) {
+    .Header {
+      font-size: calc(32px + 8px); } }
+  @media screen and (min-width: 600px) {
+    .Header {
+      font-size: calc(32px + 12px); } }
+  @media screen and (min-width: 600px) {
+    .Header {
+      margin-bottom: 20px; } }

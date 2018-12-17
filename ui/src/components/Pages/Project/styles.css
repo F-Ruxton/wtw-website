@@ -1,0 +1,17 @@
+.Project {
+  margin: auto;
+  min-height: calc(100vh - 350px);
+  max-width: 1400px; }
+  .Project__header-img--ctr {
+    height: 40vh; }
+    @media screen and (min-width: 700px) {
+      .Project__header-img--ctr {
+        height: 70vh; } }
+    @media screen and (min-width: 1100px) {
+      .Project__header-img--ctr {
+        height: 75vh; } }
+  .Project__text {
+    margin: 30px 0;
+    font-size: 24px; }
+    .Project__text--p {
+      margin: 20px 0; }

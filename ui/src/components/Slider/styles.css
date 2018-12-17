@@ -1,0 +1,24 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
+.slick-dots li button:before {
+  color: white; }
+
+.slick-dots li.slick-active button:before {
+  color: white !important; }
+
+.Slider__arrow {
+  height: 100%;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  z-index: 1; }
+  .Slider__arrow--right {
+    right: 0;
+    justify-content: flex-end; }
+    .Slider__arrow--right:hover {
+      opacity: 0.5; }
+  .Slider__arrow--left {
+    left: 0;
+    justify-content: flex-start; }
+    .Slider__arrow--left:hover {
+      opacity: 0.5; }

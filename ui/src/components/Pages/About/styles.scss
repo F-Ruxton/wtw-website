@@ -1,0 +1,165 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.About {
+  max-width: 1600px;
+  margin: auto;
+  font-size: 30px;
+
+  &__main-img {
+    margin: 30px auto;
+    padding: 0;
+    width: auto;
+    max-width: 1200px;
+    height: 30vh;
+
+    @media screen and (min-width: 500px) {
+      height: 50vh;
+    }
+    @media screen and (min-width: 700px) {
+      height: 60vh;
+    }
+    @media screen and (min-width: 960px) {
+      height: 65vh;
+    }
+  }
+
+  &__row-1 {
+    @include section-fill-page(calc(140px + $header-height));
+  }
+
+  &__text {
+    @include font-break(calc(#{$font-size-md} - 10px));
+    padding-top: 20px;
+
+    @media screen and (min-width: 700px) {
+      padding: 20px;
+    }
+  }
+
+  &__heading {
+    font-size: 36px;
+  }
+
+  &__process {
+    &--list {
+      list-style: circle;
+      margin-bottom: -10px;
+    }
+    &--items {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      @media screen and (min-width: 900px) {
+        flex-direction: row;
+        // flex-wrap: wrap;
+      }
+    }
+
+    &--item {
+      @include font-break(calc(#{$font-size-md} - 10px));
+      margin: 10px;
+    }
+  }
+
+  &__gallery {
+    margin: 30px auto;
+    max-width: 1200px;
+  }
+
+  &__text-sections {
+    max-width: 1200px;
+    margin: auto;
+
+    &--section {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__team {
+    @include section-fill-page(calc(140px + $header-height));
+    max-width: 1200px;
+    padding: 0;
+
+    &--row {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 1600px) {
+        flex-direction: row;
+      }
+    }
+
+    &-member {
+      flex-grow: 1;
+      width: 90%;
+      @media screen and (min-width: 1600px) {
+        width: 50%;
+      }
+
+      &--content {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 900px) {
+          padding: 30px;
+          flex-direction: row;
+        }
+
+        @media screen and (min-width: 1600px) {
+          flex-direction: column;
+        }
+
+        &--right {
+          flex-direction: column;
+
+          @media screen and (min-width: 900px) {
+            flex-direction: row-reverse;
+          }
+
+          @media screen and (min-width: 1600px) {
+            flex-direction: column;
+          }
+        }
+      }
+
+
+      &--img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 2px solid white;
+
+        @media screen and (max-width: 600px) {
+          height: 200px;
+          width: 200px;
+        }
+
+      }
+
+      &--name {
+        font-size: 20px;
+        margin: 10px 0 0;
+        font-weight: bold;
+
+        @media screen and (min-width: 900px) {
+          font-size: 24px;
+        }
+      }
+
+      &--text {
+        @include font-break(calc(#{$font-size-md} - 10px));
+        margin: 10px;
+
+        @media screen and (min-width: 600px) {
+          margin: 20px;
+        }
+      }
+    }
+  }
+
+}

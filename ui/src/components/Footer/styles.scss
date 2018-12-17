@@ -1,0 +1,91 @@
+@import 'styles/variables.scss';
+
+.Footer {
+  height: $footer-height;
+  font-size: $font-size-sm;
+  padding: 30px 0;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  &__row-main {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 780px) {
+      flex-direction: row;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 780px) {
+      flex-direction: row;
+      width: 66%;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    &--ctr {
+      padding: 5px 0 0 5px;
+    }
+
+    &--link {
+      margin: 5px 0;
+    }
+  }
+
+  &__site-links, &__social-media {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 780px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__last-section {
+    width: 100%;
+
+    @media screen and (min-width: 780px) {
+      flex-grow: 1;
+    }
+  }
+
+  &__credit {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__scroll-top {
+    &--left {
+      margin-bottom: 15px;
+
+      @media screen and (min-width: 780px) {
+        display: none;
+      }
+    }
+
+    &--right {
+      margin-bottom: 15px;
+      display: none;
+
+      @media screen and (min-width: 780px) {
+        display: flex;
+      }
+    }
+  }
+}

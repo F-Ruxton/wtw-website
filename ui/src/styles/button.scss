@@ -1,0 +1,19 @@
+%button {
+  font-size: 30px;
+  height: 40px;
+  padding: 5px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 400px) {
+    padding: 10px;
+  }
+  @media screen and (min-width: 500px) {
+    padding: 15px;
+  }
+  @media screen and (min-width: 600px) {
+    padding: 20px;
+  }
+}

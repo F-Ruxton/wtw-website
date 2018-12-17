@@ -1,0 +1,24 @@
+.ProjectSelector {
+  margin: auto;
+  max-width: 1200px;
+  height: initial;
+  min-height: calc(100vh - 400px);
+  padding: 0;
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 500px) {
+    .ProjectSelector {
+      padding: 0 30px; } }
+  .ProjectSelector__projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%; }
+  .ProjectSelector__link {
+    height: 300px;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 20px 0; }
+    @media screen and (min-width: 500px) {
+      .ProjectSelector__link {
+        height: 400px; } }

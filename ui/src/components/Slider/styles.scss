@@ -1,0 +1,45 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@mixin gradient($direction, $colorA: rgba(255,255,255,0), $colorB: rgba(255,255,255, 1)) {
+  transition: all 0.5s;
+  background-image: linear-gradient($direction, $colorA, $colorB);
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color:white !important;
+}
+
+.Slider {
+  &__arrow {
+    height: 100%;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+    &--right {
+      right: 0;
+      justify-content: flex-end;
+
+      &:hover {
+        opacity: 0.5;
+        // @include gradient(left);
+      }
+    }
+
+    &--left {
+      left: 0;
+      justify-content: flex-start;
+
+      &:hover {
+        opacity: 0.5;
+        // @include gradient(right);
+      }
+    }
+  }
+}
