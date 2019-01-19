@@ -13,7 +13,7 @@ export const url = (publicId, options) => {
 export const resources = async ({ method = apiConstants.get, options = {} } = {}) => {
   try {
     const resources = await axios.post(
-      'api/resources',
+      '/api/resources',
       { method, options },
       { 'Content-Type': 'application/json' },
     );
