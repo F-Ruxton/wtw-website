@@ -1,3 +1,8 @@
+.About__link {
+  text-decoration: underline; }
+  .About__link:hover {
+    color: #e8b86d; }
+
 .About {
   max-width: 1600px;
   margin: auto;
@@ -39,10 +44,6 @@
         padding: 20px; } }
   .About__heading {
     font-size: 36px; }
-  .About__link {
-    text-decoration: underline; }
-    .About__link:hover {
-      color: #e8b86d; }
   .About__process--list {
     list-style: circle;
     margin-bottom: -10px; }

@@ -8,7 +8,7 @@
 - [-] link to company instagram
 - [-] tagline on homepage
 - [-] wheel love link
-- [ ] chiba bike farm link
+- [-] chiba bike farm link
 - [ ] reword contact form
 
 ## Deploy

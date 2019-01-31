@@ -1,3 +1,5 @@
+@import 'styles/mixins.scss';
+
 .Project {
   margin: auto;
   min-height: calc(100vh - 350px);
@@ -19,6 +21,10 @@
     &--img {
 
     }
+  }
+
+  &__link {
+    @extend %in-text-link;
   }
 
   &__text {

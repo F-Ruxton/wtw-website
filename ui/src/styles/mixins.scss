@@ -14,3 +14,11 @@
     font-size: calc(#{$base} + 12px);
   }
 }
+
+%in-text-link {
+  text-decoration: underline;
+
+  &:hover {
+    color: $rock-yellow;
+  }
+}
