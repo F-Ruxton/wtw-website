@@ -5,9 +5,9 @@
 
 ## Feedback
 
-- [ ] link to company instagram
+- [-] link to company instagram
 - [-] tagline on homepage
-- [ ] wheel love link
+- [-] wheel love link
 - [ ] chiba bike farm link
 - [ ] reword contact form
 
