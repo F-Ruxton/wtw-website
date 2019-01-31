@@ -1,14 +1,28 @@
 ## Current
 
+- [ ] tagline on homepage instead of about us text
+
+
+## Feedback
+
+- [ ] link to company instagram
+- [ ] tagline on homepage
+- [ ] wheel love link
+- [ ] chiba bike farm link
+- [ ] reword contact form
+
 ## Deploy
 
 - [ ] Go over all wording
 - [ ] Finish peaty's project page
+- [ ] Fix padding on about page
 - [ ] Using our domain
+  - https://devcenter.heroku.com/articles/custom-domains
 - [ ] Cancel godaddy hosting
 - [ ] Use compressed images to reduce page load times
 - [ ] SEO
 - [ ] Add more images to site
+- [ ] Add portugal page
 - [ ] Change heroku hosting location to Europe - $ heroku ...
 - [ ] Heroku pinging site to maintain uptime
 

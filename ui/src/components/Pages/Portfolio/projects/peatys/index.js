@@ -4,7 +4,6 @@ import { cName } from '../../../Project';
 export default {
   id:       'peatys',
   title:    'Peatys',
-  name:     'Peatys',
   linkText: 'Peatys',
   linkImg: {
     request: {
@@ -34,13 +33,13 @@ export default {
   text: (
     <React.Fragment>
       <p className={`${cName}__text--p`}>
-        Wharncliffe Trailworks was fortunate enough to secure the contract to build a private jump line for legendary former DH World Champion Steve Peat.
+        Wharncliffe Trailworks has had the privilege of building a private jump line for legendary DH World Champion Steve Peat and his family.
       </p>
       <p className={`${cName}__text--p`}>
-        Design brief
+        The design brief specified the creation of two jump lines with the primary intention of providing a space for fun and progression for his sons Jake and George. The first line was required to be built at a comfortable level for the boys, with the second line to be more of a challenge and fun for all riders. Set in his private woods, the trail had to enhance the woodland aesthetics and provide an enjoyable space for hosting parties with the creation of a fire pit and seating area.
       </p>
       <p className={`${cName}__text--p`}>
-        Approach to meeting brief, materials
+        The majority of the build has been completed, but due to the winter conditions on site construction has been paused and final delivery is scheduled for spring 2019
       </p>
     </React.Fragment>
   ),

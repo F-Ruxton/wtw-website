@@ -8,12 +8,12 @@ const company = {
   text: (
     <React.Fragment>
       <p className={`${cName}__text`}>
-        Wharncliffe Trailworks are a new company, created to express our passion for the craft of trail building. Born in the grassroots of Wharncliffe Woods, Sheffield, our team have spent the past five years creating unique and refined trails that have been the basis for a thriving riding scene and attracted riders from the UK and abroad.
+        Wharncliffe Trailworks are a new company created to express our passion for the craft of trail building. Born in the grassroots of Wharncliffe Woods, Sheffield, our team have spent the past five years as a core part of the scene, helping to create the unique and refined trails that have been the basis for a thriving riding community and have attracted riders from the UK and abroad.
       </p>
 
-      <p className={`${cName}__text`}>
-        We consider trail building an art, and the environment the canvas. Wharncliffe trailworks are passionate about creating beauty and expression through the trail landscape, working with the materiality of each setting to develop the unique ientity of the trails and enhance their sense of place in the environment. Not content with mediocrity, every trail we build is sculpted delicately from the land to create a harmonious riding atmosphere and formed to complement the complex physics involved in moutain bike riding. We believe flow and feeling are an absolute necessity in our trails, so every feature is built with the greatest of love and care to ultimately be as fun as possible.
-      </p>
+      {/* <p className={`${cName}__text`}>
+        We consider trail building is an art, and the environment the canvas. Wharncliffe Trailworks are passionate about creating beauty and expression through the trail landscape, working with the materiality of each setting to develop the unique identity of the trails and enhance their sense of place in the environment. Not content with mediocrity, every trail we build is sculpted delicately from the land to create a harmonious riding atmosphere and formed to complement the complex physics involved in moutain bike riding. We believe flow and feeling are an absolute necessity in our trails, so every feature is built with the greatest of love and care to ultimately be as fun as possible.
+      </p> */}
     </React.Fragment>
   ),
 };
@@ -23,16 +23,16 @@ const philosophy = {
   text: (
     <React.Fragment>
       <p className={`${cName}__text`}>
-        To us, trail building is far more than creating facilities to ride. Trails form an essential part of the relationship between rider, bike, trail and environment, and must be created to provide a complementary connection with the other elements. We believe trails should be created holistically and emphasise the setting with its form and materiality to connect the rider with a sense of place in the surrounding environment.
+        Wharncliffe Trailworks are a new company created to express our passion for the craft of trail building. Born in the grassroots of Wharncliffe Woods, Sheffield, our team have spent the past five years as a core part of the scene, helping to create the unique and refined trails that have been the basis for a thriving riding community and have attracted riders from the UK and abroad.
       </p>
       <p className={`${cName}__text`}>
-        As such, it is the atmosphere of a place that we strive to accentuate and develop as bes as possible. Though of course the trails at Wharncliffe are popular for their riding merit, we believe a great aspect of their success is due to the atmosphere created by the connection between the trails and the setting, and has become a place  people enjoy and love to be within.
+        To us, trail building is far more than creating facilities to ride. Trails form an essential part of the relationship between the rider and environment, and must be created to complement and enhance this connection. We believe trails should be created holistically and emphasise the setting with their form and materiality to connect the rider with a strong sense of place in the surrounding environment.
       </p>
       <p className={`${cName}__text`}>
-        Simultaneously, trails should be formed to work harmoniously with the rider and bike to provide exceptional flow and be the most fun to ride. After years of experience building in Wharncliffe Woods, Wharncliffe Trailworks has the knowledge and understanding of the advanced physics involved to deliver the highest possible standard of build. As riders ourselves, that delivery has only been made possible by creating trails that we love to ride, that have been revise and delicately refined over years of development.
+        Simultaneously, trails should be crafted to work harmoniously with the rider and bike to provide exceptional flow and be the most fun to ride. As riders ourselves, we have spent years building trails we love and have developed a refined understanding of the forms and complex physics involved. This knowledge allows Wharncliffe Trailworks to deliver trails of the highest possible standard.
       </p>
       <p className={`${cName}__text`}>
-        The end result of our process are trails unlike  any other. To us, trails are an art form and should be sculpted with the greatest of care and intention. We love what we do, and dedicate ourselves to deliver trails that you and the community will love to.
+        The end result of our process are trails unlike any other. We love what we do, and dedicate ourselves to deliver trails that you and the community will love too.
       </p>
     </React.Fragment>
   ),
