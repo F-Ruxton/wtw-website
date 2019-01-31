@@ -17,6 +17,7 @@ class Portfolio extends Component {
         <ProjectSelector
           projects={[
             projects.peatys,
+            projects.chiba,
           ]}
         />
       </div>

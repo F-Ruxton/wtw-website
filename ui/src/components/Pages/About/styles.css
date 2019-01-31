@@ -75,11 +75,8 @@
     .About__text-sections--section {
       margin-bottom: 30px; }
   .About__team {
-    height: calc(100vh - 100px - calc(140px + 40px));
+    max-width: 1200px;
     margin: auto;
-    padding: 50px;
-    max-width: 1200px;
-    max-width: 1200px;
     padding: 0; }
     .About__team--row {
       display: flex;

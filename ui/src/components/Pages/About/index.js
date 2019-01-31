@@ -62,9 +62,10 @@ const About = ({ images = {} }) => {
         <Gallery images={about_gallery_imgs} />
       </div>
 
+
       <Team images={about_team_imgs} />
 
-      <div className={`${cName}__text-sections`}>
+      <div className={`${cName}__process`}>
         <AboutSection section={process} />
       </div>
 

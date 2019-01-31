@@ -82,8 +82,8 @@
   }
 
   &__team {
-    @include section-fill-page(calc(140px + #{$header-height}));
     max-width: 1200px;
+    margin: auto;
     padding: 0;
 
     &--row {
