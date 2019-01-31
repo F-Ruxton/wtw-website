@@ -26,7 +26,6 @@
 - [ ] Change heroku hosting location to Europe - $ heroku ...
 - [ ] Heroku pinging site to maintain uptime
 
-- [-] Change title from React App -> Wharncliffe Trailworks
 
 ## ToDo
 

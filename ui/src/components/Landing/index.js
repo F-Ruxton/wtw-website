@@ -20,6 +20,15 @@ class Landing extends Component {
           className={`${cName}__img`}
           image={{ src: img.url }}
         />
+
+        <div className={`${cName}__tagline`}>
+          <div>
+            Crafting Flow
+          </div>
+          <div>
+            in the Landscape
+          </div>
+        </div>
       </div>
     );
   }

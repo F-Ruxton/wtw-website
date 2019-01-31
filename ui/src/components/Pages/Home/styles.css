@@ -1,18 +1,2 @@
 .Home {
   max-width: 1200px; }
-  .Home__links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    @media (min-width: 900px) {
-      .Home__links {
-        flex-direction: row; } }
-  .Home__link {
-    height: 60vw;
-    width: 60vw;
-    margin: 20px auto; }
-    @media (min-width: 900px) {
-      .Home__link {
-        height: 20vw;
-        width: 20vw;
-        margin: 40px; } }

@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import _ from 'lodash/fp';
 import Landing from '../../Landing';
-import aboutSections from '../About/sections';
+import LandingNav from '../../LandingNav';
 import routes from '../routes';
 import ScrollTo from '../../ScrollTo';
-import LinkImage from '../../LinkImage';
 import withImageFetch from '../../../utils/images/withImageFetch';
 import imageRequest, { landingImageTags } from './imageRequest';
 import './styles.css';
 
-const cName = 'Home';
+// const cName = 'Home';
 
 export const LANDING = 'LANDING';
 export const ABOUT = 'ABOUT';
@@ -42,28 +41,13 @@ const Home = ({ images = {}, section }) => {
   const linksWithImgs    = _.map(link => ({ ...link, img: images[link.tag] }), links);
 
   return (
-    <React.Fragment>
-
+    <Fragment>
       <ScrollTo scrollOnMount={isHomePageSect && section === LANDING}>
         <Landing img={landing_main} />
       </ScrollTo>
 
-      <div className={`${cName}__about-text`}>
-        {aboutSections.company.text}
-      </div>
-
-      <div className={`${cName}__links`}>
-        { _.map(link => (
-          <LinkImage
-            key={link.to}
-            className={`${cName}__link`}
-            {...link}
-            style={{ opacity: 0.8 }}
-          />
-        ), linksWithImgs) }
-      </div>
-
-    </React.Fragment>
+      <LandingNav linksWithImgs={linksWithImgs} />
+    </Fragment>
   );
 };
 

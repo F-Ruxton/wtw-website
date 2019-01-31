@@ -1,0 +1,26 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.LandingNav {
+  &__link {
+    height: 60vw;
+    width: 60vw;
+    margin: 20px auto;
+
+    @media (min-width: 900px) {
+      height: 20vw;
+      width: 20vw;
+      margin: 40px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+}

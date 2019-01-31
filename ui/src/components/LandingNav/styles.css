@@ -1,0 +1,17 @@
+.LandingNav__link {
+  height: 60vw;
+  width: 60vw;
+  margin: 20px auto; }
+  @media (min-width: 900px) {
+    .LandingNav__link {
+      height: 20vw;
+      width: 20vw;
+      margin: 40px; } }
+
+.LandingNav__links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media (min-width: 900px) {
+    .LandingNav__links {
+      flex-direction: row; } }
