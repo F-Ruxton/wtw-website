@@ -12,6 +12,7 @@ export const contactTypes = {
 };
 
 export const contactNames = {
+  COMPANY:  'COMPANY',
   INFO:  'INFO',
   JAMES: 'JAMES',
   FRED:  'FRED',
@@ -21,9 +22,12 @@ export const contactNames = {
 const {
   EMAIL, MOBILE, WEBSITE, INSTAGRAM, FACEBOOK, FIRST_NAME, LAST_NAME, FULL_NAME,
 } = contactTypes;
-const { INFO, JAMES, FRED, KIERAN } = contactNames;
+const { COMPANY, INFO, JAMES, FRED, KIERAN } = contactNames;
 
 const contacts = {
+  [COMPANY]: {
+    [INSTAGRAM]: 'https://www.instagram.com/wharncliffetrailworks/?hl=en',
+  },
   [INFO]:  {
     [EMAIL]: 'info@wharncliffetrailworks.com'
   },

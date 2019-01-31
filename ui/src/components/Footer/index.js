@@ -76,7 +76,7 @@ export default function Footer(props) {
                   style: { height: 25, width: 25 }
                 }}
                 linkProps={{
-                  href: getContact(contactTypes.INSTAGRAM, contactNames.JAMES),
+                  href: getContact(contactTypes.INSTAGRAM, contactNames.COMPANY),
                   newTab: true,
                 }}
                 rowStyle={{ width: 'fit-content' }}
