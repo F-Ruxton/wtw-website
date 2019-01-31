@@ -16,7 +16,6 @@ const cName = 'About';
 
 const {
   company,
-  philosophy,
   process,
 } = sections;
 
@@ -57,8 +56,6 @@ const About = ({ images = {} }) => {
 
       <div className={`${cName}__text-sections`}>
         <AboutSection section={company} />
-
-        <AboutSection section={philosophy} />
       </div>
 
       <div className={`${cName}__gallery`}>

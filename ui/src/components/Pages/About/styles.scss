@@ -29,7 +29,7 @@
   }
 
   &__text {
-    @include font-break(calc(#{$font-size-md} - 10px));
+    @include font-break(calc(#{$font-size-md} - 12px));
     padding-top: 20px;
 
     @media screen and (min-width: 700px) {

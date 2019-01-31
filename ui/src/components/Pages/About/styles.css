@@ -23,17 +23,17 @@
     padding: 50px;
     max-width: 1200px; }
   .About__text {
-    font-size: calc(24px - 10px);
+    font-size: calc(24px - 12px);
     padding-top: 20px; }
     @media screen and (min-width: 400px) {
       .About__text {
-        font-size: calc(calc(24px - 10px) + 4px); } }
+        font-size: calc(calc(24px - 12px) + 4px); } }
     @media screen and (min-width: 500px) {
       .About__text {
-        font-size: calc(calc(24px - 10px) + 8px); } }
+        font-size: calc(calc(24px - 12px) + 8px); } }
     @media screen and (min-width: 600px) {
       .About__text {
-        font-size: calc(calc(24px - 10px) + 12px); } }
+        font-size: calc(calc(24px - 12px) + 12px); } }
     @media screen and (min-width: 700px) {
       .About__text {
         padding: 20px; } }

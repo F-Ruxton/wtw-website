@@ -1,12 +1,12 @@
 ## Current
 
-- [ ] tagline on homepage instead of about us text
+- [-] tagline on homepage instead of about us text
 
 
 ## Feedback
 
 - [ ] link to company instagram
-- [ ] tagline on homepage
+- [-] tagline on homepage
 - [ ] wheel love link
 - [ ] chiba bike farm link
 - [ ] reword contact form

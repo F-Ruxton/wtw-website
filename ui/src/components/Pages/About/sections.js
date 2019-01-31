@@ -10,21 +10,6 @@ const company = {
       <p className={`${cName}__text`}>
         Wharncliffe Trailworks are a new company created to express our passion for the craft of trail building. Born in the grassroots of Wharncliffe Woods, Sheffield, our team have spent the past five years as a core part of the scene, helping to create the unique and refined trails that have been the basis for a thriving riding community and have attracted riders from the UK and abroad.
       </p>
-
-      {/* <p className={`${cName}__text`}>
-        We consider trail building is an art, and the environment the canvas. Wharncliffe Trailworks are passionate about creating beauty and expression through the trail landscape, working with the materiality of each setting to develop the unique identity of the trails and enhance their sense of place in the environment. Not content with mediocrity, every trail we build is sculpted delicately from the land to create a harmonious riding atmosphere and formed to complement the complex physics involved in moutain bike riding. We believe flow and feeling are an absolute necessity in our trails, so every feature is built with the greatest of love and care to ultimately be as fun as possible.
-      </p> */}
-    </React.Fragment>
-  ),
-};
-
-const philosophy = {
-  heading: 'Philosophy',
-  text: (
-    <React.Fragment>
-      <p className={`${cName}__text`}>
-        Wharncliffe Trailworks are a new company created to express our passion for the craft of trail building. Born in the grassroots of Wharncliffe Woods, Sheffield, our team have spent the past five years as a core part of the scene, helping to create the unique and refined trails that have been the basis for a thriving riding community and have attracted riders from the UK and abroad.
-      </p>
       <p className={`${cName}__text`}>
         To us, trail building is far more than creating facilities to ride. Trails form an essential part of the relationship between the rider and environment, and must be created to complement and enhance this connection. We believe trails should be created holistically and emphasise the setting with their form and materiality to connect the rider with a strong sense of place in the surrounding environment.
       </p>
@@ -112,6 +97,5 @@ const process = {
 
 export default {
   company,
-  philosophy,
   process,
 }
