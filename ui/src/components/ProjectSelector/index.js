@@ -58,7 +58,7 @@ const ProjectSelector = ({ projects }) => {
   );
   const ProjectSelectorWithImageRequest = withImageFetch(imageRequest, ProjectSelectorContent);
 
-  return <ProjectSelectorWithImageRequest projects={projects} />
+  return <ProjectSelectorWithImageRequest projects={projects} />;
 }
 
 export default ProjectSelector;

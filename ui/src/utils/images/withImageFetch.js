@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 import _ from 'lodash/fp';
 import { fetchImage } from '.';
+import Loading from '../../components/Loading';
 
 export const toTagImageRequest = tags => _.map(tag => ({ name: tag, type: 'tag', tag }), tags);
+
+const loaderStyle = {
+  height: '30vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 
 export default function withImageFetch(imageRequest = [], Compt) {
   return class ImageFetchComponent extends Component {
@@ -11,6 +19,8 @@ export default function withImageFetch(imageRequest = [], Compt) {
       this.state = {
         images: {},
         _mount: false,
+        loading: true,
+        imageNames: _.compact(_.map('name', imageRequest)),
       };
     }
 
@@ -31,6 +41,19 @@ export default function withImageFetch(imageRequest = [], Compt) {
           this.setImage(imgRequest.name, image);
         });
       }
+      else if (this._isMount) {
+        this.setState({ loading: false});
+      }
+    }
+
+    checkLoading (images) {
+      const { state: { imageNames } } = this;
+
+      return _.flow(
+        _.keys,
+        _.difference(imageNames),
+        _.negate(_.isEmpty),
+      )(images);
     }
 
     setImage(name, img) {
@@ -38,16 +61,19 @@ export default function withImageFetch(imageRequest = [], Compt) {
 
       const { images: oldImages } = this.state;
       const images = _.merge(oldImages, { [name]: img });
+      const loading = this.checkLoading(images);
 
       if (this._isMount) {
-        this.setState({ images });
+        this.setState({ images, loading });
       }
     }
 
     render() {
       const { props, state } = this;
 
-      return <Compt {...props} {...state} />;
+      return state.loading
+        ? <Loading style={loaderStyle} />
+        : <Compt {...props} {...state} />;
     }
   }
 }

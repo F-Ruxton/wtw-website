@@ -20,7 +20,7 @@ export default {
     img: {
       request: {
         type: 'tag',
-        name: 'chiba_link_img',
+        // name: 'chiba_link_img',
         tag: 'chiba_link_img',
       },
     },

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Header from '../../Header';
 import ContactDetails from '../../ContactDetails';
 import './styles.css';
-// import Row from '../../Row';
-// import ContactForm from '../../ContactForm';
 
 export const CONTACT = 'CONTACT';
 
@@ -16,10 +14,6 @@ class Contact extends Component {
         <Header className={`${cName}__header`}>Contact</Header>
 
         <ContactDetails />
-        {/* <Row className={`${cName}__row`}>
-
-          <ContactForm style={boxStyle} />
-        </Row> */}
       </div>
     );
   }
