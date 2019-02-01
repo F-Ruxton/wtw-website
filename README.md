@@ -31,27 +31,18 @@
   - [ ] Consistent break points - make a mixin
   - [ ] Avoid footer scroll on short pages
 
-
 - [ ] Content
-  - [ ] Switch to gsuite
-    - [ ] Folder per project with text and images
+  - [ ] Make landing tagline hold in either bottom or top right part of page
   - [ ] Gather more photos, see media folder
   - [ ] Embed instagram
   - [ ] Media page
-
-- [ ] Navigation
-  - [ ] Rock hamburger on mobile
-
-- [ ] Home
-  - [ ] Landing section
-    - [ ] Text over image?
+  - [ ] Switch to gsuite
+    - [ ] Folder per project with text and images
 
 - [ ] About
-  - [ ] Rock circle round team images
   - [ ] Better team images
 
 - [ ] Contact
-  - [ ] Reinstate contact form
   - [ ] Check form works (set up info@wharncliffetrailworks.com)
   - [ ] Replace email with picture
 
@@ -61,9 +52,3 @@
 
 - [ ] Project
   - [ ] Split gallery to break up text?
-
-- [ ] Not found page
-  - [ ] Not found rock pile
-
-- [ ] Footer
-  - [ ] Further social media
