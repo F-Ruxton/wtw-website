@@ -2,7 +2,6 @@
 
 ## Deploy
 
-- [ ] use standard buttons for desktop site nav
 - [ ] reword contact form
 - [ ] Go over all wording
 - [ ] Finish peaty's project page
@@ -15,7 +14,8 @@
 - [ ] Add more images to site
 - [ ] Add portugal page
   - [ ] Portugal images
-  - [-] Heroku pinging site to maintain uptime
+- [ ] Heroku pinging site to maintain uptime
+  - [ ] Finish testing script
 
 ## ToDo
 
