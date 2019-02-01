@@ -81,10 +81,30 @@ class Nav extends Component {
           </div>
 
           <div className={`${cName}__buttons`}>
-            <HomeRock style={{ marginRight: -10 }} />
-            <AboutRock />
-            <PortfolioRock />
-            <ContactRock />
+            <A
+              className={`${cName}__button`}
+              to={routes.home}
+            >
+              Home
+            </A>
+            <A
+              className={`${cName}__button`}
+              to={routes.about}
+            >
+              About
+            </A>
+            <A
+              className={`${cName}__button`}
+              to={routes.portfolio}
+            >
+              Portfolio
+            </A>
+            <A
+              className={`${cName}__button`}
+              to={routes.contact}
+            >
+              Contact
+            </A>
           </div>
         </div>
       </div>

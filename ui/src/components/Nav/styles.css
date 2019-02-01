@@ -62,3 +62,7 @@
     @media screen and (min-width: 900px) {
       .Nav__buttons {
         display: flex; } }
+  .Nav__button {
+    height: 50px;
+    font-size: 30px;
+    padding: 10px 20px; }

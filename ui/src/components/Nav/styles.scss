@@ -87,4 +87,10 @@
       display: flex;
     }
   }
+
+  &__button {
+    height: 50px;
+    font-size: $font-size-lg;
+    padding: 10px 20px;
+  }
 }
