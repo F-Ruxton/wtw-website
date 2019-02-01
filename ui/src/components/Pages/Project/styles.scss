@@ -4,7 +4,16 @@
   margin: auto;
   min-height: calc(100vh - 350px);
   max-width: 1400px;
-  // border: 2px solid white;
+
+  &__header-text {
+    display: flex;
+    align-items: center;
+
+    &--img {
+      height: 80px;
+      margin-right: 10px;
+    }
+  }
 
   &__header-img {
     &--ctr {

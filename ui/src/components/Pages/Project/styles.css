@@ -7,6 +7,12 @@
   margin: auto;
   min-height: calc(100vh - 350px);
   max-width: 1400px; }
+  .Project__header-text {
+    display: flex;
+    align-items: center; }
+    .Project__header-text--img {
+      height: 80px;
+      margin-right: 10px; }
   .Project__header-img--ctr {
     height: 40vh; }
     @media screen and (min-width: 700px) {

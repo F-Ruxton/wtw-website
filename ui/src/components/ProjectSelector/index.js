@@ -30,13 +30,13 @@ const ProjectSelectorContent = ({ images = {}, projects: rawProjects = [] }) => 
     <div className={cName}>
       <div className={`${cName}__projects`}>
         { !_.isEmpty(images) &&
-          _.map(project => (
+          _.map(({ id, link }) => (
             <LinkImage
-              key={_.get('id', project) + _.random(0, 100000)}
+              key={id + _.random(0, 100000)}
               className={`${cName}__link`}
-              to={getUrl(routes.project, { ':id': _.get('id', project) })}
-              linkText={_.get('linkText', project)}
-              img={_.get(['linkImg', 'image'], project)}
+              to={getUrl(routes.project, { ':id': id })}
+              linkText={_.get('text', link)}
+              img={_.get(['img', 'image'], link)}
               style={{ opacity: 0.6 }}
             />
           ), projects) }
@@ -47,7 +47,7 @@ const ProjectSelectorContent = ({ images = {}, projects: rawProjects = [] }) => 
 
 const ProjectSelector = ({ projects }) => {
   const imageRequest = _.reduce(
-    (acc, project) => _.concat(acc, _.get(['linkImg', 'request'], project)),
+    (acc, project) => _.concat(acc, _.get(['link', 'img', 'request'], project)),
     [],
     projects,
   );

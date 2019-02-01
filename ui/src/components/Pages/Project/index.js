@@ -21,7 +21,7 @@ const ProjectContent = ({ images, project = {} }) => {
   return (
     <div className={cName}>
       <div className={`${cName}__header`}>
-        <Header>{_.get('title', project)}</Header>
+        <Header>{_.get('header', project)}</Header>
 
         <div className={`${cName}__header-img--ctr`}>
           <FillImage
@@ -46,7 +46,10 @@ const ProjectContent = ({ images, project = {} }) => {
 
 const Project = props => {
   const id      = _.get(['0', 'match', 'params', 'id'], props);
-  const project = _.find({ id }, projects);
+  const project = _.flow(
+    _.find({ id }),
+    _.get(['project']),
+  )(projects);
 
   if (_.isUndefined(project)) {
     return <Redirect to={routes.portfolio} />
