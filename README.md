@@ -2,20 +2,20 @@
 
 ## Deploy
 
+- [ ] use standard buttons for desktop site nav
 - [ ] reword contact form
 - [ ] Go over all wording
 - [ ] Finish peaty's project page
 - [ ] Using our domain
   - [ ] https://devcenter.heroku.com/articles/custom-domains
+  - [ ] https://scotch.io/@PratyushB/adding-domain-registered-on-godaddy-to-heroku-app
 - [ ] Cancel godaddy hosting
 - [ ] Use compressed images to reduce page load times
 - [ ] SEO
 - [ ] Add more images to site
 - [ ] Add portugal page
   - [ ] Portugal images
-- [ ] Change heroku hosting location to Europe - $ heroku ...
-- [ ] Heroku pinging site to maintain uptime
-
+  - [-] Heroku pinging site to maintain uptime
 
 ## ToDo
 

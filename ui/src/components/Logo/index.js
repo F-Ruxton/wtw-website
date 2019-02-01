@@ -41,3 +41,22 @@ export default function Logo (props) {
     </div>
   );
 }
+
+export function ChibaLogo (props) {
+  const {
+    size = MEDIUM,
+  } = props;
+
+  const imgSize = getImgSize(size);
+
+  return (
+    <div className={cName}>
+      <img
+        className={`${cName}__img`}
+        style={imgSize}
+        src={logos.chibaLogo.src}
+        alt={logos.chibaLogo.alt}
+      />
+    </div>
+  );
+}
