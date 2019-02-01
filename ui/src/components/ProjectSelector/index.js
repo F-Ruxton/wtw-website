@@ -10,7 +10,7 @@ import './styles.css';
 const cName = 'ProjectSelector';
 
 const addProjectImages = images => project => {
-  const linkImg = _.get('linkImg', project);
+  const linkImg = _.get(['link', 'img'], project);
   const tag     = _.get(['request', 'tag'], linkImg);
   const image   = findByTag(images, tag);
 
@@ -26,20 +26,25 @@ const addProjectImages = images => project => {
 const ProjectSelectorContent = ({ images = {}, projects: rawProjects = [] }) => {
   const projects = _.map(addProjectImages(images), rawProjects);
 
+
   return (
     <div className={cName}>
       <div className={`${cName}__projects`}>
         { !_.isEmpty(images) &&
-          _.map(({ id, link }) => (
-            <LinkImage
-              key={id + _.random(0, 100000)}
-              className={`${cName}__link`}
-              to={getUrl(routes.project, { ':id': id })}
-              linkText={_.get('text', link)}
-              img={_.get(['img', 'image'], link)}
-              style={{ opacity: 0.6 }}
-            />
-          ), projects) }
+          _.map(project => {
+            const id = _.get('id', project);
+
+            return (
+              <LinkImage
+                key={id + _.random(0, 100000)}
+                className={`${cName}__link`}
+                to={getUrl(routes.project, { ':id': id })}
+                linkText={_.get(['link', 'text'], project)}
+                img={_.get(['linkImg', 'image'], project)}
+                style={{ opacity: 0.6 }}
+              />
+            )
+          }, projects) }
       </div>
     </div>
   );
