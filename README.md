@@ -3,8 +3,8 @@
 ## Deploy
 
 - [ ] reword contact form
-- [ ] Go over all wording
-- [ ] Finish peaty's project page
+- [-] Go over all wording
+- [-] Finish peaty's project page
 - [ ] Using our domain
   - [ ] https://devcenter.heroku.com/articles/custom-domains
   - [ ] https://scotch.io/@PratyushB/adding-domain-registered-on-godaddy-to-heroku-app
@@ -14,8 +14,7 @@
 - [ ] Add more images to site
 - [ ] Add portugal page
   - [ ] Portugal images
-- [ ] Heroku pinging site to maintain uptime
-  - [ ] Finish testing script
+- [-] Heroku pinging site to maintain uptime
 
 ## ToDo
 

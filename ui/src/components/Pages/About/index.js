@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import _ from 'lodash/fp';
 import Team from './team';
 import sections from './sections';
@@ -42,10 +42,7 @@ const About = ({ images = {} }) => {
   const groupImg = findByTag(about_team_imgs, 'group');
 
   return (
-    <div className={cName}>
-
-      <Header>About Us</Header>
-
+    <Fragment>
       { groupImg && (
         <div className={`${cName}__main-img`}>
           <FillImage
@@ -69,8 +66,19 @@ const About = ({ images = {} }) => {
         <AboutSection section={process} />
       </div>
 
-    </div>
+    </Fragment>
   );
 }
 
-export default withImageFetch(imageRequest, About);
+export default function () {
+
+  const AboutPageWithFetch =  withImageFetch(imageRequest, About)
+
+  return (
+    <div className={cName}>
+      <Header>About Us</Header>
+
+      <AboutPageWithFetch />
+    </div>
+  )
+};
