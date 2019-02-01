@@ -6,7 +6,6 @@ import A from '../A';
 import Image from '../Image';
 import Masthead from '../Masthead';
 import ScrollTo from '../ScrollTo';
-import { HomeRock, PortfolioRock, AboutRock, ContactRock } from '../Rocks/';
 import pages from '../Pages';
 import routes from '../Pages/routes';
 import { icons } from '../../assets/images'
