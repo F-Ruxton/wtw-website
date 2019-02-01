@@ -80,28 +80,16 @@ class Nav extends Component {
           </div>
 
           <div className={`${cName}__buttons`}>
-            <A
-              className={`${cName}__button`}
-              to={routes.home}
-            >
+            <A className={`${cName}__button`} to={routes.home}>
               Home
             </A>
-            <A
-              className={`${cName}__button`}
-              to={routes.about}
-            >
+            <A className={`${cName}__button`} to={routes.about}>
               About
             </A>
-            <A
-              className={`${cName}__button`}
-              to={routes.portfolio}
-            >
+            <A className={`${cName}__button`} to={routes.portfolio}>
               Portfolio
             </A>
-            <A
-              className={`${cName}__button`}
-              to={routes.contact}
-            >
+            <A className={`${cName}__button`} to={routes.contact}>
               Contact
             </A>
           </div>
