@@ -23,6 +23,7 @@
   - [ ] Automatic copying of images from drive
 
 - [ ] General
+  - [ ] Use redux to store image request responses
   - [ ] Page change setState error
   - [ ] Responsive (have multiple image sizes)
   - [ ] Turn off back end and see what breaks
