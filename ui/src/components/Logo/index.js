@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash/fp';
+import classNames from 'classnames';
 import { logos } from '../../assets/images/';
 import { SMALL, MEDIUM, LARGE, X_LARGE } from '../../utils/sizes';
 import './styles.css';
@@ -31,7 +32,7 @@ export default function Logo (props) {
   const imgSize = getImgSize(size);
 
   return (
-    <div className={cName}>
+    <div className={classNames(cName, props.className)}>
       <img
         className={`${cName}__img`}
         style={imgSize}

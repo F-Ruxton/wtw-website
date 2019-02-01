@@ -14,7 +14,7 @@ export default function Loading (props) {
 
   return (
     <div className={cName}>
-      <Logo size={size} />
+      <Logo className={`${cName}__logo`} size={size} />
       { !_.isEmpty(msg) &&
         <div className={`${cName}__msg`}>
           {msg}
