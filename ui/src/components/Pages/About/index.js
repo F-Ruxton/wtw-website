@@ -7,17 +7,13 @@ import Header from '../../Header';
 import FillImage from '../../FillImage';
 import imageRequest from './imageRequest';
 import withImageFetch from '../../../utils/images/withImageFetch';
-import { findByTag } from '../../../utils/images';
 import './styles.css';
 
 export const ABOUT = 'ABOUT';
 
 const cName = 'About';
 
-const {
-  company,
-  process,
-} = sections;
+const { company } = sections;
 
 const AboutSection = ({ section }) => (
   <div className={`${cName}__text-sections--section`}>
@@ -35,19 +31,18 @@ const AboutSection = ({ section }) => (
 
 const About = ({ images = {} }) => {
   const {
+    about_header_img,
     about_gallery : about_gallery_imgs,
     about_team    : about_team_imgs,
   } = images;
 
-  const groupImg = findByTag(about_team_imgs, 'group');
-
   return (
     <Fragment>
-      { groupImg && (
+      { about_header_img && (
         <div className={`${cName}__main-img`}>
           <FillImage
             className={`${cName}__img`}
-            image={{ src: _.get('url', groupImg) }}
+            image={{ src: _.get('url', about_header_img) }}
           />
         </div> ) }
 
@@ -62,9 +57,9 @@ const About = ({ images = {} }) => {
 
       <Team images={about_team_imgs} />
 
-      <div className={`${cName}__process`}>
+      {/* <div className={`${cName}__process`}>
         <AboutSection section={process} />
-      </div>
+      </div> */}
 
     </Fragment>
   );

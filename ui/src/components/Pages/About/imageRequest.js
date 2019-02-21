@@ -1,9 +1,15 @@
 export const aboutImageTags = {
-  about_gallery : 'about_gallery',
-  about_team    : 'about_team',
+  about_header_img : 'about_header_img',
+  about_gallery    : 'about_gallery',
+  about_team       : 'about_team',
 };
 
 const imageRequest = [
+  {
+    type: 'tag',
+    name: aboutImageTags.about_header_img,
+    tag: aboutImageTags.about_header_img,
+  },
   {
     type: 'tag',
     name: aboutImageTags.about_gallery,

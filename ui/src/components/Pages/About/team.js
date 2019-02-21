@@ -23,7 +23,12 @@ const teamMembers = {
     name: 'James Pettitt',
     tag: 'james',
     imageLeft: true,
-    imageProps: { heightOffset: -500 },
+    imageProps: {
+      heightOffset: -500,
+      style: {
+        backgroundPosition: '-20px',
+      },
+    },
     text: (
       <div className={`${cName}__team-member--text`}>
         Known by many as P, James is an artist of the land. A graduate of Architecture and Environmental Design, he is able to view the environment with a critical eye and a rare perspective that enables him to thrive on forming the most unique trail features that are visually stunning and harmonious with the setting. Part of the former Clayspades and 50to01 affiliate (See {wheelLoveLink}), James is an integral part of the Wharncliffe scene and organiser of the yearly Summer Solstice celebration thrown to bring the community together and enjoy the spiritual home.
@@ -36,8 +41,8 @@ const teamMembers = {
     imageLeft: false,
     imageProps: {
       style: {
-        backgroundPosition: '-140px',
-        transform: 'scale(2.2)',
+        backgroundPosition: '-20px',
+        transform: 'scale(1.0)',
       },
     },
     text: (
@@ -62,7 +67,7 @@ const teamMembers = {
     imageLeft: false,
     text: (
       <div className={`${cName}__team-member--text`}>
-        Working part time whilst in his final year of a course in photography at college, Kieran is a young gun endeavouring to make his mark on the world. Bursting onto the Wharncliffe scene two years ago, Kieran has turned heads with his edgework and boundless energy for trail perfection. Talented in many areas, Kieran brings with him a fiery enthusiasm that makes him a valuable asset to the team.
+        Working part time whilst in his final year of a course in photography at college, Kieran is a young gun endeavouring to make his mark on the world. Bursting onto the Wharncliffe scene two years ago, Kieran has turned heads with the his edgework and boundless energy for trail perfection. Talented in many areas, Kieran brings with him a fiery enthusiasm that makes him a valuable asset to the team.
       </div>
     ),
   },

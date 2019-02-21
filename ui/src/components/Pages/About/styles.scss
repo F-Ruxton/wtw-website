@@ -7,7 +7,7 @@
   font-size: 30px;
 
   &__main-img {
-    margin: 30px auto;
+    margin: 30px auto 0;
     padding: 0;
     width: auto;
     max-width: 1200px;
@@ -29,7 +29,7 @@
   }
 
   &__text {
-    @include font-break(calc(#{$font-size-md} - 12px));
+    @include font-break(calc(#{$font-size-md} - 10px));
     padding-top: 20px;
 
     @media screen and (min-width: 700px) {

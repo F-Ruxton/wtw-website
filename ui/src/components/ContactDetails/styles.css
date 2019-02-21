@@ -24,13 +24,13 @@
         font-size: calc(16px + 12px); } }
     .ContactDetails__detail--text {
       margin: 10px 0 0 0;
-      font-size: 12px; }
+      font-size: 14px; }
       @media screen and (min-width: 400px) {
         .ContactDetails__detail--text {
-          font-size: calc(12px + 4px); } }
+          font-size: calc(14px + 4px); } }
       @media screen and (min-width: 500px) {
         .ContactDetails__detail--text {
-          font-size: calc(12px + 8px); } }
+          font-size: calc(14px + 8px); } }
       @media screen and (min-width: 600px) {
         .ContactDetails__detail--text {
-          font-size: calc(12px + 12px); } }
+          font-size: calc(14px + 12px); } }
