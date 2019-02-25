@@ -2,15 +2,7 @@
 
 ## Deploy
 
-- [ ] Naked domain
-- [ ] SSL layer
 - [ ] SEO
-
-- [ ] Pinging site to maintain uptime -> fix script
-
-## Non-urgent
-
-- [ ] Cancel godaddy hosting
 
 ## ToDo
 
@@ -34,9 +26,6 @@
   - [ ] Media page
   - [ ] Switch to gsuite
     - [ ] Folder per project with text and images
-
-- [ ] About
-  - [ ] Better team images
 
 - [ ] Contact
   - [ ] Check form works (set up info@wharncliffetrailworks.com)
