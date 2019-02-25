@@ -27,7 +27,7 @@ export const resources = async ({ method = apiConstants.get, options = {} } = {}
 export const fetchImageByTag = async ({ tag, multiple = false, options = {} }) => {
   const mainImg = await resources({
     method: apiConstants.get_by_tag,
-    options: { type: 'upload', tag, tags: true, ...options },
+    options: { type: 'upload', tag, tags: true, ...options, secure: true },
   });
   const resourcesRaw = _.get(['data', 'resources'], mainImg);
 
