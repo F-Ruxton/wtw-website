@@ -68,6 +68,10 @@
     margin: 10px 0;
     display: flex;
     justify-content: flex-end;
+
+    &--link {
+      text-decoration: underline;
+    }
   }
 
   &__scroll-top {

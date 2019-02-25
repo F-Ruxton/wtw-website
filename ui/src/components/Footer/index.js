@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import _ from 'lodash/fp';
 import Row from '../Row';
 import A from '../A';
@@ -14,14 +14,22 @@ const cName = 'Footer'
 const credits = [
   {
     image: icons.angleBrackets,
-    text: `Website by ${getContact(contactTypes.FULL_NAME, contactNames.FRED)}`,
+    text: `Website - ${getContact(contactTypes.FULL_NAME, contactNames.FRED)}`,
   },
   {
     image: icons.camera,
-    text: `Photos by ${getContact(contactTypes.FULL_NAME, contactNames.KIERAN)}`,
-    linkProps: {
-      href: getContact(contactTypes.WEBSITE, contactNames.KIERAN),
-    },
+    text: (
+      <Fragment>
+        <span>Photos - </span>
+        <A
+          to={getContact(contactTypes.WEBSITE, contactNames.KIERAN)}
+          className={`${cName}__credit--link`}
+        >
+          {getContact(contactTypes.FULL_NAME, contactNames.KIERAN)}
+        </A>
+        <span> and WTW</span>
+      </Fragment>
+    ),
   }
 ];
 
@@ -105,7 +113,7 @@ export default function Footer(props) {
               _.map(({ image, text, linkProps }) => (
                 <div className={`${cName}__link ${cName}__credit`} key={text}>
                   <Sprite
-                    linkProps={linkProps}
+                    linkProps={{}}
                     imageProps={{
                       image: image,
                       withBorder: false,
