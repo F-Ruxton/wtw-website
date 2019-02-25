@@ -3,6 +3,7 @@ import { Cloudinary as CoreCloudinary, Util } from 'cloudinary-core';
 import CloudinaryConfig from '../../config/cloudinary';
 import axios from 'axios';
 import apiConstants from '../../redux/apis/cloudinary/contants';
+import { secureResourceUrls } from './helpers';
 
 export const url = (publicId, options) => {
   const scOptions = Util.withSnakeCaseKeys(options);
@@ -27,13 +28,11 @@ export const resources = async ({ method = apiConstants.get, options = {} } = {}
 export const fetchImageByTag = async ({ tag, multiple = false, options = {} }) => {
   const mainImg = await resources({
     method: apiConstants.get_by_tag,
-    options: { type: 'upload', tag, tags: true, ...options, secure: true },
+    options: { type: 'upload', tag, tags: true, ...options },
   });
-  const resourcesRaw = _.get(['data', 'resources'], mainImg);
+  const resourcesRaw = secureResourceUrls(_.get(['data', 'resources'], mainImg));
 
-  return multiple
-    ? resourcesRaw
-    : _.head(resourcesRaw);
+  return multiple ? resourcesRaw : _.head(resourcesRaw);
 }
 
 export const fetchImage = (imgRequest = {}) => {
