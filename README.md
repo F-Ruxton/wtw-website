@@ -2,19 +2,15 @@
 
 ## Deploy
 
-- [ ] reword contact form
-- [-] Go over all wording
-- [-] Finish peaty's project page
-- [ ] Using our domain
-  - [ ] https://devcenter.heroku.com/articles/custom-domains
-  - [ ] https://scotch.io/@PratyushB/adding-domain-registered-on-godaddy-to-heroku-app
-- [ ] Cancel godaddy hosting
-- [ ] Use compressed images to reduce page load times
+- [ ] Naked domain
+- [ ] SSL layer
 - [ ] SEO
-- [ ] Add more images to site
-- [ ] Add portugal page
-  - [ ] Portugal images
-- [-] Heroku pinging site to maintain uptime
+
+- [ ] Pinging site to maintain uptime -> fix script
+
+## Non-urgent
+
+- [ ] Cancel godaddy hosting
 
 ## ToDo
 
